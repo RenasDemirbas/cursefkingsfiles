@@ -1,0 +1,245 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screens.TitleScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  path = menuelements/backgrounds.png
+  action = texturizebackground
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_copyright_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_accessibility_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = mid-left
+  x = 339
+  action = movebutton
+  y = -11
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  width = 139
+  action = resizebutton
+  height = 112
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  action = setbuttonlabel
+  value = Ayarlar
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = menuelements/ayaralrhover.png
+  backgroundnormal = menuelements/ayarlar.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  path = menuelements/hover.wav
+  action = addhoversound
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  path = menuelements/click.wav
+  action = setbuttonclicksound
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  action = hidebutton
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 186
+  width = 268
+  action = deep_customization_element:title_screen_forge_top
+  actionid = b95d5e8c-4f13-4869-ace2-826910c2b3fb1700428229886
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 2
+  width = 108
+  action = deep_customization_element:title_screen_branding
+  actionid = 7aafa63c-4184-4107-b18d-64cc002736a81700428229897
+  y = 295
+  height = 40
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 411
+  width = 228
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = 24cdce4d-c0b3-4d64-91b9-0b2e065877711700428229897
+  y = 317
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 423
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = 66b0295f-2f2e-499c-a953-7fcb19327b761700428229897
+  y = 184
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 183
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = 2e0535f7-5393-4ed8-9b53-3dac28ec7aa81700428229898
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = true
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = ee7cf91b-0aca-455a-88da-464c201879691700428229898
+  y = 0
+  height = 30
+}
+
+customization {
+  path = menuelements/minecraft.png
+  orientation = top-left
+  x = 80
+  width = 484
+  action = addtexture
+  actionid = e7052ce2-3554-46e4-8762-7ca3a35229c11700428382027
+  y = 37
+  height = 120
+}
+
+customization {
+  hoversound = menuelements/hover.wav
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = quitgame%btnaction_splitter_fm%
+  backgroundhovered = menuelements/oyundancikhover.png
+  label = Maceraya Son Ver :(
+  clicksound = menuelements/click.wav
+  loopbackgroundanimations = true
+  x = 177
+  width = 302
+  action = addbutton
+  actionid = 9b3efb70-04f3-415e-bd34-0c1710a85c441700428733806
+  y = 278
+  backgroundnormal = menuelements/oyundancik.png
+  height = 21
+}
+
+customization {
+  hoversound = menuelements/hover.wav
+  orientation = top-left
+  restartbackgroundanimations = false
+  buttonaction = joinserver;185.254.238.138%btnaction_splitter_fm%
+  backgroundhovered = menuelements/oynahover.png
+  label = Maceraya Atıl !
+  clicksound = menuelements/click.wav
+  loopbackgroundanimations = true
+  hoverlabel = Maceraya Atıl !
+  x = 178
+  width = 139
+  action = addbutton
+  actionid = 09dd3ed1-398b-4d8c-80a7-45bc7075fcc11700428562663
+  y = 157
+  backgroundnormal = menuelements/oyna.png
+  height = 110
+}
+
+customization {
+  orientation = top-left
+  copy_client_player = true
+  slim = false
+  auto_skin = false
+  scale = 70
+  headrotationy = 0.0
+  headrotationx = 0.0
+  skinurl = http://textures.minecraft.net/texture/ba6534b701bafdf2b2818de527a6566379d049c9b53b5523da557a9b99247a39
+  showname = false
+  crouching = false
+  follow_mouse = true
+  x = 82
+  width = 42
+  parrot_left_shoulder = false
+  action = custom_layout_element:fancymenu_customization_player_entity
+  actionid = 2711790c-e38d-40b8-ad88-1eb75debf71e1700494723126
+  y = 136
+  playername = viavisaa
+  bodyrotationx = 0.0
+  parrot = false
+  bodyrotationy = 0.0
+  auto_cape = false
+  is_baby = false
+  height = 126
+}
+
